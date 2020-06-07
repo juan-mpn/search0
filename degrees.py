@@ -85,6 +85,11 @@ def main():
 
 
 def shortest_path(source, target):
+    neighbors = neighbors_for_person(source)
+    print("Source Neighbors: ", neighbors)
+    neighbors = neighbors_for_person(target)
+    print("\nTarget Neighbors: ", neighbors)
+    
     """
     Returns the shortest list of (movie_id, person_id) pairs
     that connect the source to the target.
